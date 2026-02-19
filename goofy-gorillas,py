@@ -1,4 +1,4 @@
-//easy question
+#easy question
 testcases = int(input())
 for i in range(testcases):
     smile = input().split()
