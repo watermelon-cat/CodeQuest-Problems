@@ -20,7 +20,11 @@ for i in range(testcases):
     bill = bill%0.05
     P = round(bill, 2)//0.01
     bill = bill%0.01
-    print("Quarters=",int(Q))
-    print("Dimes=",int(D))
-    print("Nickles=",int(N))
-    print("Pennies=",int(P))
+    Q = int(Q)
+    D = int(D)
+    N = int(N)
+    P = int(P)
+    print("Quarters=",Q, sep= "")
+    print("Dimes=",D,sep= "")
+    print("Nickels=",N,sep= "")
+    print("Pennies=",P,sep= "")
