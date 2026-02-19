@@ -1,0 +1,9 @@
+//easy question
+testcases = int(input())
+for i in range(testcases):
+    smile = input().split()
+    if smile[0] == smile[1]:
+        print("true")
+    else:
+        print("false")
+    
