@@ -1,6 +1,11 @@
-testcases = int(input("testcases:"))
+def br(val:float, n_digits:int = 0):
+    val *= 10**n_digits
+    result = int(val + (0.50002 if val >= 0 else -0.50002))
+    return result / 10**n_digits
+
+testcases = int(input())
 for i in range(testcases):
-    eq = input("What's your equation?").split()
+    eq = input().split()
     num1 = float(eq[0])
     num2 = float(eq[2])
     op = eq[1]
@@ -16,7 +21,5 @@ for i in range(testcases):
     elif op == "/":
         result1 = num1 / num2
         result2 = num2 / num1
-        result1 = round(result1 + .001, 1)
-        result2 = round(result2 + .001, 1)
-    print(f"{result1} {result2}\n")
+    print(f"{br(result1, 1)} {br(result2,1)}")
     
